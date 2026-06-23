@@ -45,10 +45,10 @@ set_property -dict { PACKAGE_PIN G18   IOSTANDARD LVCMOS33 PULLUP true } [get_po
 ## ------------------------------------------------------------------------
 ## 5. Display LCD 16x2 (Controle no Pmod JB e Dados no Pmod JC)
 ## ------------------------------------------------------------------------
-# Sinais de Controle (Pmod JB - Pinos 1 a 3)
-set_property -dict { PACKAGE_PIN D14   IOSTANDARD LVCMOS33 } [get_ports { lcd_rs }]; # Pino JB1
-set_property -dict { PACKAGE_PIN F16   IOSTANDARD LVCMOS33 } [get_ports { lcd_rw }]; # Pino JB2
-set_property -dict { PACKAGE_PIN G16   IOSTANDARD LVCMOS33 } [get_ports { lcd_e  }]; # Pino JB3
+# Sinais de Controle (Pmod JD - Pinos 7 a 9)
+set_property -dict { PACKAGE_PIN H2   IOSTANDARD LVCMOS33 } [get_ports { lcd_rs }]; # Pino JD7
+set_property -dict { PACKAGE_PIN G4   IOSTANDARD LVCMOS33 } [get_ports { lcd_e  }]; # Pino JD8
+set_property -dict { PACKAGE_PIN G2   IOSTANDARD LVCMOS33 } [get_ports { lcd_rw }]; # Pino JD9
 
 # Barramento de Dados de 8-bits (Pmod JC Inteiro)
 set_property -dict { PACKAGE_PIN K1    IOSTANDARD LVCMOS33 } [get_ports { lcd_data[0] }]; # Pino JC1
